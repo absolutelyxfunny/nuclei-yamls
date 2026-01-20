@@ -1,0 +1,26 @@
+id: bitrix-module
+
+info:
+  name: Bitrix - Module Finder
+  author: funny
+  severity: info
+  description: Bitrix module was detected
+
+  tags: bitrix,modulebitrix,bitrixmodule
+
+http:
+  - method: GET
+    path: "{{{BaseURL}}}/bitrix/tools/{{path}}"
+
+    payloads:
+      path:
+        - "vote"
+        - "grain.customsettings"
+        - "ihead.logs"
+
+    matchers-condition: and
+    matchers:
+
+      - type: status
+        status:
+          - 403
