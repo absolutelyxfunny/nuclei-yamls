@@ -2,7 +2,7 @@ id: brainyfilter_sql
 info:
   name: wow
   author: FantasticExploits
-  tags: http://xss.pro
+  tags: brainyfilter
   severity: info
   reference: http
 requests:
