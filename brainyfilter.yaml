@@ -1,0 +1,17 @@
+id: brainyfilter_sql
+info:
+  name: wow
+  author: FantasticExploits
+  tags: http://xss.pro
+  severity: info
+  reference: http
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/catalog/view/javascript/brainyfilter.js"
+    matchers:
+      - type: word
+        words:
+          - "Brainy Filter Pro 4."
+
+#https://target.com/bebra?limit=22121'
